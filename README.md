@@ -1,0 +1,2 @@
+# scrumcards
+djangular
