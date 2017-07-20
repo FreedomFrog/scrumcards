@@ -13,7 +13,7 @@
         $routeProvider
             .when('/', {
                 templateUrl: '/static/html/scrumboard.html',
-                controller: 'ScrumboardController',
+                controller: 'ScrumboardController'
             })
             .when('/login', {
                 templateUrl: '/static/html/login.html',
@@ -22,8 +22,10 @@
             .otherwise('/');
     }
 
+
     function run($http) {
         $http.defaults.xsrfHeaderName = 'X-CSRFToken';
         $http.defaults.xsrfCookieName = 'csrftoken';
-    }
+    };
 })();
+
